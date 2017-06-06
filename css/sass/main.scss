@@ -1,3 +1,7 @@
+$teal: #008484;
+a {
+  word-wrap: break-word;
+}
 #globalSearch {
   display: none;
 }
@@ -9,5 +13,9 @@
     display: inline-block;
     width: auto;
     float: left;
+    a {
+      background-color: $teal;
+      cursor: pointer;
+    }
   }
 }
