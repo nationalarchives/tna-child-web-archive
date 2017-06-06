@@ -28,3 +28,9 @@ function tna_child_styles()
 }
 
 add_action('wp_enqueue_scripts', 'tna_child_styles');
+
+//Include functions
+include 'inc/functions/shortcode.php';
+
+//Add shortcode
+add_shortcode('a-z', 'a_z_shortcode');
