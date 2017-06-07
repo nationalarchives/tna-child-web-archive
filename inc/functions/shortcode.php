@@ -12,7 +12,7 @@ function a_z_shortcode(){
 	echo "<div class='clearfix'></div>";
 }
 
-//checks for Shortcode A-Z then adds the hook
+//checks for Shortcode A-Z then runs the auto_id_h2 function
 function check_az_shortcode(){
 	if (function_exists('has_shortcode')) {
 		global $post;
