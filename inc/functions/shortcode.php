@@ -2,7 +2,7 @@
 
 /* A to Z Shortcode */
 function a_z_shortcode(){
-	echo '<ul id="a-z-menu">';
+	echo "<ul id='a-z-menu'>";
 		foreach (range('A', 'Z') as $letter)
 		{
 			echo "<li><a>$letter</a></li>";

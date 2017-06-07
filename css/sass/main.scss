@@ -1,4 +1,12 @@
 $teal: #008484;
+$whiteSmoke: #F5F5F5;
+.entry-content {
+  h2 {
+    border-bottom: 1px solid #ddd;
+    background-color: $whiteSmoke;
+    padding: .2em;
+  }
+}
 a {
   word-wrap: break-word;
 }
