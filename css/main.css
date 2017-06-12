@@ -2,6 +2,8 @@
   border-bottom: 1px solid #ddd;
   background-color: #F5F5F5;
   padding: .2em; }
+.entry-content #gotoTopString {
+  padding: .5em; }
 
 a {
   word-wrap: break-word; }

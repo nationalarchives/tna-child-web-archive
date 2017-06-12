@@ -23,16 +23,15 @@ module.exports = function (grunt) {
         },
 
         concat: {
-            js: {
-                src: ['js/*.js'],
-                dest: 'js/scripts.js'
-            },
+            // js: {
+            //     src: ['js/*.js'],
+            //     dest: 'js/scripts.js'
+            // },
             css: {
                 src: ['css/main.css'],
                 dest: 'css/main.css'
             }
         },
-
         sass: {
             build: {
                 files: [{
@@ -41,16 +40,16 @@ module.exports = function (grunt) {
                 }]
             }
         },
-
         uglify: {
-            build: {
-                files: [{
-                    src: 'js/scripts.js',
-                    dest: 'js/scripts.js'
-                }]
+            options: {
+                mangle: false
+            },
+            target: {
+                files: {
+                    'js/scripts.min.js': ['js/scripts.js']
+                }
             }
         },
-
         cssmin: {
             target: {
                 files: [{
