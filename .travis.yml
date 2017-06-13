@@ -15,7 +15,8 @@ install:
 
 script:
   - phpunit tests/functionTemplateTest.php
-  - phpunit tests/TNAGlobalsTest.php
+  - phpunit tests/identifyEnvironmentFromIPTest.php
+  - phpunit tests/setThemeGlobalsTest.php
 
 notifications:
   slack:
