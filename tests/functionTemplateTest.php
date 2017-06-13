@@ -2,14 +2,16 @@
 
 class FunctionTemplateTest extends PHPUnit_Framework_TestCase
 {
-	public function testIfTemplateFunctionExists()
+	public function test_IfTemplateFunctionExists()
 	{
 		$this->assertFileExists('inc/functions/functions-template.php');
 	}
-	public function testIfShortcodeFunctionExists()
+
+	public function test_IfShortcodeFunctionExists()
 	{
 		$this->assertFileExists('inc/functions/shortcode.php');
 	}
+
 	public function test_exists_check_az_shortcode()
 	{
 		$this->assertTrue(function_exists('check_az_shortcode'));
@@ -20,9 +22,14 @@ class FunctionTemplateTest extends PHPUnit_Framework_TestCase
 		$this->assertFalse(check_az_shortcode());
 	}
 
-	public function test_shortcode_string_return()
+	public function test_shortcode_string_start()
 	{
 		$this->assertStringStartsWith('<ul id="a-z-menu">', a_z_shortcode());
+	}
+
+	public function test_shortcode_string_end()
+	{
+		$this->assertStringEndsWith('<div class="clearfix"></div>', a_z_shortcode());
 	}
 
 	public function test_exists_a_z_shortcode()
