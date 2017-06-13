@@ -14,7 +14,8 @@ install:
   - npm install
 
 script:
-#  - phpunit tests/FunctionTest.php
+  - phpunit tests/FunctionTest.php
+  - phpunit tests/functionTemplateTest.php
   - grunt jasmine
 
 notifications:
