@@ -43,8 +43,8 @@ class FunctionTemplateTest extends PHPUnit_Framework_TestCase
 		$this->assertRegexp($regularExpContent, '<h2>*?</h2>');
 	}
 
-//	public function test_exists_auto_id_h2()
-//	{
-//		$this->assertTrue(function_exists('auto_id_h2'));
-//	}
+	public function test_exists_auto_id_h2()
+	{
+		$this->assertTrue(function_exists('auto_id_h2'));
+	}
 }
