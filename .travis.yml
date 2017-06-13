@@ -16,7 +16,7 @@ install:
 script:
   - phpunit tests/FunctionTest.php
   - phpunit tests/functionTemplateTest.php
-  - grunt jasmine
+  - phpunit tests/TNAGlobalsTest.php
 
 notifications:
   slack:
