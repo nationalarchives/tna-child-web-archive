@@ -14,7 +14,6 @@ install:
   - npm install
 
 script:
-  - phpunit tests/FunctionTest.php
   - phpunit tests/functionTemplateTest.php
   - phpunit tests/TNAGlobalsTest.php
 
