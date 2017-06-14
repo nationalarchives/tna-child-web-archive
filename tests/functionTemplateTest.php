@@ -2,12 +2,12 @@
 
 class FunctionTemplateTest extends PHPUnit_Framework_TestCase
 {
-	public function test_IfTemplateFunctionExists()
+	public function test_if_template_function_file_exists()
 	{
 		$this->assertFileExists('inc/functions/functions-template.php');
 	}
 
-	public function test_IfShortcodeFunctionExists()
+	public function test_if_shortcode_function_file_exists()
 	{
 		$this->assertFileExists('inc/functions/shortcode.php');
 	}
@@ -37,7 +37,7 @@ class FunctionTemplateTest extends PHPUnit_Framework_TestCase
 		$this->assertTrue(function_exists('a_z_shortcode'));
 	}
 
-	public function test_regularExpression()
+	public function test_regular_expression()
 	{
 		$regularExpContent = '/(\<h[2](.*?))\>(.*)(<\/h[2]>)/i';
 		$this->assertRegexp($regularExpContent, '<h2>*?</h2>');

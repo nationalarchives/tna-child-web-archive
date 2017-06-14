@@ -1,9 +1,10 @@
 .entry-content .h2JumpLinks {
   border-bottom: 1px solid #ddd;
-  background-color: #F5F5F5;
+  background-color: #eee;
   padding: .2em; }
 .entry-content #gotoTopString {
-  padding: .5em; }
+  padding: .8em;
+  text-decoration: underline; }
 
 a {
   word-wrap: break-word; }

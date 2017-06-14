@@ -1,13 +1,10 @@
 <?php
 function auto_id_h2( $content ) {
-	if ( function_exists( 'sanitize_title' ) ) {
-		$content = preg_replace_callback( '/(\<h[2](.*?))\>(.*)(<\/h[2]>)/i', function ( $matches ) {
-			if ( ! stripos( $matches[0], 'id=' ) ) {
-				$matches[0] = $matches[1] . $matches[2] . ' id="' . sanitize_title( $matches[3] ) . '" class="h2JumpLinks">' . $matches[3] . $matches[4];
+		$content = preg_replace_callback( '/(\<h[2](.*?))\>(.*)(<\/h[2]>)/i', function ( $h2 ) {
+			if ( ! stripos( $h2[0], 'id=' ) ) {
+				$h2[0] = $h2[1] . $h2[2] . ' id="' . sanitize_title( $h2[3] ) . '" class="h2JumpLinks">' . $h2[3] . $h2[4];
 			}
-			return $matches[0];
+			return $h2[0];
 		}, $content );
 		return $content;
-	}
 }
-

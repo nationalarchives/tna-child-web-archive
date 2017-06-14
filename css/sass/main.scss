@@ -1,13 +1,15 @@
 $teal: #008484;
-$whiteSmoke: #F5F5F5;
+$lightGrey: #eee;
+
 .entry-content {
   .h2JumpLinks {
     border-bottom: 1px solid #ddd;
-    background-color: $whiteSmoke;
+    background-color: $lightGrey;
     padding: .2em;
   }
   #gotoTopString {
-    padding: .5em;
+    padding: .8em;
+    text-decoration: underline;
   }
 }
 a {
