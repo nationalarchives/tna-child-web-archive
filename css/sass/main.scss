@@ -1,0 +1,34 @@
+$teal: #008484;
+$lightGrey: #eee;
+
+.entry-content {
+  .h2JumpLinks {
+    border-bottom: 1px solid #ddd;
+    background-color: $lightGrey;
+    padding: .2em;
+  }
+  #gotoTopString {
+    padding: .8em;
+    text-decoration: underline;
+  }
+}
+a {
+  word-wrap: break-word;
+}
+#globalSearch {
+  display: none;
+}
+#a-z-menu {
+  li {
+    text-align: center;
+    list-style-type: none;
+    margin: 0 4px 4px 0;
+    display: inline-block;
+    width: auto;
+    float: left;
+    a {
+      background-color: $teal;
+      cursor: pointer;
+    }
+  }
+}

@@ -13,26 +13,14 @@ module.exports = function (grunt) {
 
         watch: {
             scripts: {
-                files: 'js/*.js',
-                tasks: ['concat', 'uglify']
+                files: 'js/scripts.js',
+                tasks: 'uglify'
             },
             css: {
                 files: 'css/sass/*.scss',
                 tasks: ['sass', 'cssmin']
             }
         },
-
-        concat: {
-            js: {
-                src: ['js/*.js'],
-                dest: 'js/scripts.js'
-            },
-            css: {
-                src: ['css/main.css'],
-                dest: 'css/main.css'
-            }
-        },
-
         sass: {
             build: {
                 files: [{
@@ -41,16 +29,16 @@ module.exports = function (grunt) {
                 }]
             }
         },
-
         uglify: {
-            build: {
-                files: [{
-                    src: 'js/scripts.js',
-                    dest: 'js/scripts.js'
-                }]
+            options: {
+                mangle: false
+            },
+            target: {
+                files: {
+                    'js/scripts.min.js': 'js/scripts.js'
+                }
             }
         },
-
         cssmin: {
             target: {
                 files: [{
@@ -67,13 +55,12 @@ module.exports = function (grunt) {
 
     //Load plugins
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 
     //Default Task(s)
-    grunt.registerTask('default', ['sass', 'cssmin', 'concat', 'uglify', 'watch']);
+    grunt.registerTask('default', ['sass', 'cssmin', 'uglify', 'watch']);
 
 };
