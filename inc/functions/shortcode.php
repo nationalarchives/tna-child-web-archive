@@ -2,16 +2,12 @@
 
 /* A to Z Shortcode */
 function a_z_shortcode() {
-	$render_string = '';
-	$render_string .= '<ul id="a-z-menu">';
+    $template = '<ul id="a-z-menu">%s</ul><div class="clearfix"></div>';
+    $list_items = '';
 	foreach ( range( 'A', 'Z' ) as $letter ) {
-		$render_string .= sprintf( "<li><a href='#%s'>%s</a></li>", strtolower( $letter ), $letter );
+		$list_items .= sprintf( "<li><a href='#%s'>%s</a></li>", strtolower( $letter ), $letter );
 	}
-	$render_string .= '<li><a href="#0-9">0-9</a></li>';
-	$render_string .= '</ul>';
-	$render_string .= '<div class="clearfix"></div>';
-
-	return $render_string;
+	return sprintf($template, $list_items);
 }
 
 //checks for Shortcode A-Z then runs the auto_id_h2 function
@@ -24,3 +20,7 @@ function check_az_shortcode() {
 	}
 	return false;
 }
+
+
+
+'<ul id="a-z-menu">%s</ul><div class="clearfix"></div>';
