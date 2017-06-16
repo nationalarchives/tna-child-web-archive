@@ -28,13 +28,6 @@ function tna_child_styles() {
 add_action( 'wp_enqueue_scripts', 'tna_child_styles' );
 
 
-function tna_child_scripts() {
-	wp_register_script( 'scripts', get_stylesheet_directory_uri() . '/js/scripts.min.js', array(),
-		EDD_VERSION, true );
-	wp_enqueue_script( 'scripts' );
-}
-add_action( 'wp_enqueue_scripts', 'tna_child_scripts' );
-
 
 //Include functions
 include 'inc/functions/functions-template.php';
