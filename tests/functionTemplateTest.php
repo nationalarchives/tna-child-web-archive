@@ -56,4 +56,9 @@ class FunctionTemplateTest extends PHPUnit_Framework_TestCase
     {
         $this->assertTrue(function_exists('auto_id_h2'));
     }
+
+    public function test_enqueue_shortcode_script()
+    {
+	    $this->assertTrue(function_exists('tna_child_scripts'));
+    }
 }
