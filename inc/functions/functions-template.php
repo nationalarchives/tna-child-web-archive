@@ -8,7 +8,7 @@ function auto_id_h2($content)
 
         if (!strpos($full_regex_match, 'id=')) {
 
-            $template_string = "<h2 id='%s' class='h2JumpLinks'>%s</h2>";
+            $template_string = "<h2 id='%s'>%s</h2>";
 
             $return_h2 = sprintf(
                 $template_string,
