@@ -58,12 +58,27 @@ These are instructions on how to update the all pages.
 When in wordpress the landing page is using our standard templates called `Level 1 landing` which is available in the drop down underneath the `Page Attributes` section.
  
 ### 1.2 Browse A - Z
-This page uses the standard 'default template', and 
+This page uses the standard 'default template'.
 
-This theme has a browse A-Z feature. In order to update the links you will need to update the links on the 'Browse A-Z' page, you will need need to click on the `Text` tab which is part of the visual editor. Before pasting in the links, please make sure the links are in the correct format by the example below.
+This theme comes featured with a shortcode, an editor can add a short snippet `[a-z]` to generate a list of buttons ranging from A-Z and 0-9.
 
+In order to update the page with the links, please follow the steps below.
 
-*Eg.*
+####Step 1
+Before updating anything in wordpress, please make sure you have cleared up your list items by checking the prerequisites below.
+Go to a-z excel sheet
+2. Choose the A-Z tab
+3. Select and copy all
+4. Paste in Notepad++ or similar text editor.
+5. Bring the cursor to line one
+6. Ctrl+F
+7. Select the Replace tab
+8. In the first text field type: <!--.*?--> 
+9. leave the second text field blank
+10. At the bottom of the Replace window, select Regular Expression
+11. Select Replace All.
+
+By now you should have a clean `HTML` to be pasted into wordpress which looks like this
 ```HTML
 <li><a title="This link opens in a new window" href="http://webarchive.nationalarchives.gov.uk/*/http://www.abilityvability.co.uk/" target="_blank" rel="noopener noreferrer">Ability v Ability</a></li>
 <li><a title="This link opens in a new window" href="http://webarchive.nationalarchives.gov.uk/*/http://www.aboutmyvote.co.uk/" target="_blank" rel="noopener noreferrer">About My Vote</a></li>
@@ -71,9 +86,8 @@ This theme has a browse A-Z feature. In order to update the links you will need 
 <li><a title="This link opens in a new window" href="http://webarchive.nationalarchives.gov.uk/*/http://virtual.nationalschool.gov.uk/AJC/Pages/HomePage.aspx" target="_blank" rel="noopener noreferrer">Academy for Justice Commissioning (http://virtual.nationalschool.gov.uk/AJC/Pages/HomePage.aspx)</a></li>
 ```
 
-Create the heading(s) of the letter(s)/alphabet(s) and an unordered list by example here.
-
-*Eg.*
+####Step 2
+Go to the page where you have the a-z list, create a your `HTML` blocks for each letter/alphabet as list below.
 ```HTML
 <h2>A</h2>
 <ul>
@@ -89,3 +103,4 @@ Create the heading(s) of the letter(s)/alphabet(s) and an unordered list by exam
 ***Note
 
 Please follow all steps correctly for the A-Z or some of the functionality will not work such as the jump links.
+Also if something is not aligned properly, please check for any missed or closed tags or contact someone from the web team.
