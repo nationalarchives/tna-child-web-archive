@@ -7,6 +7,7 @@ function a_z_shortcode() {
 	foreach ( range( 'A', 'Z' ) as $letter ) {
 		$list_items .= sprintf( "<li><a href='#%s'>%s</a></li>", strtolower( $letter ), $letter );
 	}
+	$list_items .= '<li><a href="#0-9">0-9</a></li>';
 	return sprintf($template, $list_items);
 }
 
