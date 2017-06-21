@@ -24,6 +24,6 @@ function setThemeGlobals($environment = null) {
                 'Web archive' => '/webarchive/'
             );
             $pre_path = '/webarchive/';
-            break
+            break;
     }
 }
