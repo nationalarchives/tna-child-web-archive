@@ -66,17 +66,17 @@ In order to update the page with the links, please follow the steps below.
 
 ####Step 1
 Before updating anything in wordpress, please make sure you have cleared up your list items by checking the prerequisites below.
-Go to a-z excel sheet
+Go to a-z excel sheet. `Objective ID: A3904942`
 2. Choose the A-Z tab
-3. Select and copy all
-4. Paste in Notepad++ or similar text editor.
-5. Bring the cursor to line one
-6. Ctrl+F
-7. Select the Replace tab
-8. In the first text field type: <!--.*?--> 
-9. leave the second text field blank
-10. At the bottom of the Replace window, select Regular Expression
-11. Select Replace All.
+3. Select and copy 1st column
+4. Paste in Notepad++ or similar text editor that can handle `Regular Expression`.
+5. Bring the cursor to line one by typing `Control + Home`.
+6. `Ctrl+F`
+7. Select the Replace tab.
+8. In the first text field type: `<!--.*?-->`, ensure there is a space after the regex. 
+9. Leave the second text field blank.
+10. At the bottom of the Replace window, select Regular Expression.
+11. Select `Replace All`.
 
 By now you should have a clean `HTML` to be pasted into wordpress which looks like this
 ```HTML
@@ -104,3 +104,7 @@ Go to the page where you have the a-z list, create a your `HTML` blocks for each
 
 Please follow all steps correctly for the A-Z or some of the functionality will not work such as the jump links.
 Also if something is not aligned properly, please check for any missed or closed tags or contact someone from the web team.
+
+*Eg.*
+
+If a list is indented there could be a possibility that a `<ul>` tag could be missing at the beginning, or a `</ul>` could be missing at the end of the list.
