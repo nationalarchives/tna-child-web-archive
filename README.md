@@ -64,7 +64,7 @@ This theme comes featured with a shortcode, an editor can add a short snippet `[
 
 In order to update the page with the links, please follow the steps below.
 
-####Step 1
+##### Step 1
 Before updating anything in wordpress, please make sure you have cleared up your list items by checking the prerequisites below.
 Go to a-z excel sheet. `Objective ID: A3904942`
 2. Choose the A-Z tab
@@ -86,7 +86,7 @@ By now you should have a clean `HTML` to be pasted into wordpress which looks li
 <li><a title="This link opens in a new window" href="http://webarchive.nationalarchives.gov.uk/*/http://virtual.nationalschool.gov.uk/AJC/Pages/HomePage.aspx" target="_blank" rel="noopener noreferrer">Academy for Justice Commissioning (http://virtual.nationalschool.gov.uk/AJC/Pages/HomePage.aspx)</a></li>
 ```
 
-####Step 2
+##### Step 2
 Go to the page where you have the a-z list, create a your `HTML` blocks for each letter/alphabet as list below.
 ```HTML
 <h2>A</h2>
