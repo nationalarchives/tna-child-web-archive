@@ -21,10 +21,9 @@ function setThemeGlobals($environment = null) {
             break;
         case 'external':
             $pre_crumbs = array(
-                'Help with your research' => '/help-with-your-research/',
-                'Web archive' => '/help-with-your-research/web-archive/'
+                'Web archive' => '/webarchive/'
             );
-            $pre_path = '/help-with-your-research/web-archive/';
+            $pre_path = '/webarchive/';
             break;
     }
 }
