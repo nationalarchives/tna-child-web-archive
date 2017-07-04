@@ -24,14 +24,14 @@ class setThemeGlobalsTest extends PHPUnit_Framework_TestCase
     {
         $result = setThemeGlobals('local');
         $this->assertEquals($GLOBALS['pre_path'], '');
-        $this->assertEquals($GLOBALS['pre_crumbs']['Web archive'], '/');
+	    $this->assertEquals($GLOBALS['pre_crumbs']['UK Government Web Archive'], '/');
     }
 
     public function testResultForDevelopmentEnvironment()
     {
         $result = setThemeGlobals('development');
         $this->assertEquals($GLOBALS['pre_path'], '');
-        $this->assertEquals($GLOBALS['pre_crumbs']['Web archive'], '/');
+	    $this->assertEquals($GLOBALS['pre_crumbs']['UK Government Web Archive'], '/');
     }
 
     public function testResultForExternalTNA() {
