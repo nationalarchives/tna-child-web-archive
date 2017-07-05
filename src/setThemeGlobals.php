@@ -23,7 +23,7 @@ function setThemeGlobals($environment = null) {
             $pre_crumbs = array(
                 'UK Government Web Archive' => '/webarchive/'
             );
-            $pre_path = '/webarchive/';
+            $pre_path = '/webarchive';
             break;
     }
 }
