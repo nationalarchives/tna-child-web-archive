@@ -109,3 +109,8 @@ Also if something is not aligned properly, please check for any missed or closed
 *Eg.*
 
 If a list is indented there could be a possibility that a `<ul>` tag could be missing at the beginning, or a `</ul>` could be missing at the end of the list.
+
+### 1.3 Bookmarklet
+You can add a bookmarklet button that can be dragged to a bookmark bar, and can be places anywhere on the page with the following code.
+
+`[bookmarklet]Your Custom Text[/bookmarklet]` 
