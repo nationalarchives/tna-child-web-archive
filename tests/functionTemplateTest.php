@@ -61,4 +61,9 @@ class FunctionTemplateTest extends PHPUnit_Framework_TestCase
     {
 	    $this->assertTrue(function_exists('tna_child_scripts'));
     }
+
+    public function test_archive_bookmarkLet()
+	{
+		$this->assertTrue(function_exists('archive_bookmarkLet'));
+	}
 }
