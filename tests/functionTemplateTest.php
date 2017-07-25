@@ -64,6 +64,6 @@ class FunctionTemplateTest extends PHPUnit_Framework_TestCase
 
     public function test_archive_bookmarkLet()
 	{
-		$this->assertTrue(function_exists('archive_bookmarkLet'));
+		$this->assertTrue(function_exists('archive_bookmarklet'));
 	}
 }

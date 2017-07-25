@@ -35,7 +35,7 @@ include 'inc/functions/shortcode.php';
 
 //Add shortcode
 add_shortcode( 'a-z', 'a_z_shortcode' );
-add_shortcode( 'bookmarkLet', 'archive_bookmarkLet' );
+add_shortcode( 'bookmarklet', 'archive_bookmarklet' );
 
 //Add actions
 add_action( 'wp', 'check_az_shortcode' );

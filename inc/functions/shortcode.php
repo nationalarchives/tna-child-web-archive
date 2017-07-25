@@ -12,10 +12,10 @@ function a_z_shortcode() {
 }
 
 /* BookMarklet Shortcode */
-function archive_bookmarkLet($atts, $bookMarkText = null){
+function archive_bookmarklet($atts, $bookmarklet_text = null){
 	$href = 'javascript:location%3Dlocation.href.replace(/%5E/,\'http://webarchive.nationalarchives.gov.uk/*/\')';
-	$bookMarkLetString = '<a class="button bookMarkLet" href="%s">%s</a>';
-	return sprintf($bookMarkLetString, $href, $bookMarkText);
+	$bookmarklet_string = '<a class="button bookMarkLet" href="%s">%s</a>';
+	return sprintf($bookmarklet_string, $href, $bookmarklet_text);
 }
 
 //Enqueue js for shortcode when used on a page
