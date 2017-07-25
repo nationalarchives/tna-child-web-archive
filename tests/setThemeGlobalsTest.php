@@ -36,7 +36,8 @@ class setThemeGlobalsTest extends PHPUnit_Framework_TestCase
 
     public function testResultForExternalTNA() {
         $result = setThemeGlobals('external');
-        $this->assertEquals($GLOBALS['pre_path'], '/webarchive/');
+        $this->assertEquals($GLOBALS['pre_path'], '/webarchive');
+	    $this->assertEquals($GLOBALS['pre_crumbs']['UK Government Web Archive'], '/webarchive/');
     }
 
 
