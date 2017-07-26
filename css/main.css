@@ -20,6 +20,7 @@ a {
     cursor: pointer; }
 
 .bookMarkLet {
-  cursor: move; }
+  cursor: move;
+  margin-bottom: 1.5em; }
 
 /*# sourceMappingURL=main.css.map */
