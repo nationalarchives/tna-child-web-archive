@@ -39,3 +39,15 @@ function check_az_shortcode() {
 	}
 	return false;
 }
+
+
+//checks for Shortcode Bookmarklet then runs the script
+function check_bookmarklet_shortcode() {
+	if ( function_exists( 'has_shortcode' ) ) {
+		global $post;
+		if ( has_shortcode( $post->post_content, 'bookmarklet' ) ) {
+			add_action( 'wp_enqueue_scripts', 'tna_child_scripts' );
+		}
+	}
+	return false;
+}
