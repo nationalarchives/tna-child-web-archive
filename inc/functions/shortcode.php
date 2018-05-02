@@ -27,6 +27,15 @@ function tna_child_scripts() {
 	}
 }
 
+//Enqueue js for bookmarklet when used on a page
+function tna_bookmarklet_script() {
+	if( function_exists('wp_register_script') ){
+		wp_register_script( 'bookmarklet', get_stylesheet_directory_uri() . '/js/bookmarklet.min.js', array(),
+			EDD_VERSION, true );
+		wp_enqueue_script( 'bookmarklet' );
+	}
+}
+
 
 //checks for Shortcode A-Z then runs the auto_id_h2 function
 function check_az_shortcode() {
@@ -46,7 +55,7 @@ function check_bookmarklet_shortcode() {
 	if ( function_exists( 'has_shortcode' ) ) {
 		global $post;
 		if ( has_shortcode( $post->post_content, 'bookmarklet' ) ) {
-			add_action( 'wp_enqueue_scripts', 'tna_child_scripts' );
+			add_action( 'wp_enqueue_scripts', 'tna_bookmarklet_script' );
 		}
 	}
 	return false;

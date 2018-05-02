@@ -36,12 +36,10 @@ a.bookMarkLet {
   color: #333;
   font-weight: bold;
   background: #eee;
-  //background-size: 15px 15px;
 
   &:before {
     content: url("../img/dots_new.png");
     margin-right: .5em;
-    //height: 5px;
   }
 
   &:hover {
