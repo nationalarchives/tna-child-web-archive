@@ -66,4 +66,14 @@ class FunctionTemplateTest extends PHPUnit_Framework_TestCase
 	{
 		$this->assertTrue(function_exists('archive_bookmarklet'));
 	}
+
+	public function test_check_bookmarklet_shortcode()
+	{
+		$this->assertTrue(function_exists('check_bookmarklet_shortcode'));
+	}
+
+	public function test_tna_bookmarklet_script()
+	{
+		$this->assertTrue(function_exists('tna_bookmarklet_script'));
+	}
 }

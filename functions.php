@@ -39,6 +39,7 @@ add_shortcode( 'bookmarklet', 'archive_bookmarklet' );
 
 //Add actions
 add_action( 'wp', 'check_az_shortcode' );
+add_action( 'wp', 'check_bookmarklet_shortcode' );
 
 //Add filter
 add_filter( 'the_content', 'auto_id_h2' );

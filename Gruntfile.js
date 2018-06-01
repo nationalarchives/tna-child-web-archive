@@ -13,7 +13,7 @@ module.exports = function (grunt) {
 
         watch: {
             scripts: {
-                files: 'js/scripts.js',
+                files: ['js/scripts.js', 'js/bookmarklet.js'],
                 tasks: 'uglify'
             },
             css: {
@@ -35,7 +35,8 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'js/scripts.min.js': 'js/scripts.js'
+                    'js/scripts.min.js' : 'js/scripts.js',
+                    'js/bookmarklet.min.js' : 'js/bookmarklet.js'
                 }
             }
         },
