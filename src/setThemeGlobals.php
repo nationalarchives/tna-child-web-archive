@@ -20,6 +20,7 @@ function setThemeGlobals($environment = null) {
             $pre_crumbs = array('UK Government Web Archive' => '/');
             break;
         case 'external':
+        case 'aws_public':
             $pre_crumbs = array(
                 'UK Government Web Archive' => '/webarchive/'
             );
