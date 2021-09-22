@@ -1,7 +1,7 @@
 {
   "name": "TNA-Web-Archive",
   "version": "1.0.0",
-  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
