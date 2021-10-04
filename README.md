@@ -16,10 +16,6 @@ Click 'Remote' in SourceTree and you will be shown a full list of repositories y
 * Use the naming convention, 'tna-child-...'
 * Copy the files inside 'tna-base-child-template' into your new child theme folder
 
-#### 1.2.1 Adding new repository to Travis CI
-
-Log into your Travis CI account and navigate to The National Archives organisation. Here you will be able to add the repository to Travis CI. 
-
 ### 1.3 Create a new project for the WordPress installation in PhpStorm
 
 * Select 'Create New Project from Existing Files'
@@ -31,8 +27,6 @@ Log into your Travis CI account and navigate to The National Archives organisati
   * Set Project URL as: http://tna-base:8888
 
 ### 1.4 Installing dependencies
-
-This repository is configured to allow for easy integration with Travis CI (Continuous Integration).
 
 #### 1.4.1 Obtaining dependencies via Composer
 
