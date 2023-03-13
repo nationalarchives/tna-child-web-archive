@@ -13,7 +13,7 @@ function a_z_shortcode() {
 
 /* BookMarklet Shortcode */
 function archive_bookmarklet($atts, $bookmarklet_text = null){
-	$href = 'javascript:location%3Dlocation.href.replace(/%5E/,\'http://webarchive.nationalarchives.gov.uk/*/\')';
+	$href = 'javascript:location%3Dlocation.href.replace(/%5E/,\'https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/\')';
 	$bookmarklet_string = '<a class="button bookMarkLet" href="%s">%s</a>';
 	return sprintf($bookmarklet_string, $href, $bookmarklet_text);
 }
